@@ -7,6 +7,20 @@
   <meta name="description" content="Luxury operations, reporting, and automation systems for high-touch teams. CRM cleanup, KPI dashboards, workflow automation, and client delivery systems." />
   <meta name="theme-color" content="#0B0F1A" />
 
+  <!-- Social share (update YOURDOMAIN + og image when live) -->
+  <meta property="og:title" content="Avery McQueen — Operations, Reporting & Automation" />
+  <meta property="og:description" content="Luxury operations, reporting, and automation systems for high-touch teams. CRM cleanup, KPI dashboards, workflow automation, and client delivery systems." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://YOURDOMAIN.COM/" />
+  <meta property="og:image" content="https://YOURDOMAIN.COM/og.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Avery McQueen — Operations, Reporting & Automation" />
+  <meta name="twitter:description" content="Luxury operations, reporting, and automation systems for high-touch teams." />
+  <meta name="twitter:image" content="https://YOURDOMAIN.COM/og.jpg" />
+
+  <link rel="canonical" href="https://YOURDOMAIN.COM/" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -69,7 +83,12 @@
       </nav>
 
       <div class="flex items-center gap-2">
-        <button id="themeBtn" class="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-3 py-2 text-sm text-white/90 hover:bg-white/10 transition" type="button">
+        <button
+          id="themeBtn"
+          aria-label="Toggle theme"
+          class="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-3 py-2 text-sm text-white/90 hover:bg-white/10 transition"
+          type="button"
+        >
           <span id="themeIcon" aria-hidden="true">☾</span>
           <span class="hidden sm:inline">Theme</span>
         </button>
@@ -196,21 +215,21 @@
       </div>
 
       <div class="mt-8 grid gap-6 md:grid-cols-3">
-        <a href="portfolio.html#kpi" class="group rounded-3xl border border-white/10 bg-white/5 p-6 hover:bg-white/7 transition shadow-glow">
+        <a href="portfolio.html#kpi" class="group rounded-3xl border border-white/10 bg-white/5 p-6 hover:bg-white/10 transition shadow-glow">
           <div class="text-xs text-white/60">Dashboards</div>
           <div class="mt-2 text-lg font-semibold group-hover:text-white">Executive KPI Dashboard Framework</div>
           <p class="mt-2 text-sm text-white/70">Pipeline, leads, appointments, and performance—consistent definitions and leadership visibility.</p>
           <div class="mt-6 text-sm font-semibold text-white/85">Explore →</div>
         </a>
 
-        <a href="portfolio.html#automation" class="group rounded-3xl border border-white/10 bg-white/5 p-6 hover:bg-white/7 transition shadow-glow">
+        <a href="portfolio.html#automation" class="group rounded-3xl border border-white/10 bg-white/5 p-6 hover:bg-white/10 transition shadow-glow">
           <div class="text-xs text-white/60">Automation</div>
           <div class="mt-2 text-lg font-semibold group-hover:text-white">Daily Snapshot + Change Tracking</div>
           <p class="mt-2 text-sm text-white/70">Scheduled reporting that creates a clean “what changed” view—no manual comparisons.</p>
           <div class="mt-6 text-sm font-semibold text-white/85">Explore →</div>
         </a>
 
-        <a href="portfolio.html#crm" class="group rounded-3xl border border-white/10 bg-white/5 p-6 hover:bg-white/7 transition shadow-glow">
+        <a href="portfolio.html#crm" class="group rounded-3xl border border-white/10 bg-white/5 p-6 hover:bg-white/10 transition shadow-glow">
           <div class="text-xs text-white/60">CRM & Data</div>
           <div class="mt-2 text-lg font-semibold group-hover:text-white">HubSpot Export Standardization</div>
           <p class="mt-2 text-sm text-white/70">Field consistency, formatting fixes, import readiness, and a reliable foundation for reporting.</p>
@@ -270,10 +289,10 @@
     document.getElementById("year").textContent = new Date().getFullYear();
 
     // Theme toggle (dark/light)
-    const root = document.documentElement;
     const btn = document.getElementById("themeBtn");
     const icon = document.getElementById("themeIcon");
     const saved = localStorage.getItem("am_theme");
+
     if (saved === "light") {
       document.body.classList.add("bg-pearl","text-ink");
       document.body.classList.remove("bg-ink","text-white");
@@ -283,6 +302,7 @@
       icon.textContent = "☾";
       document.documentElement.style.colorScheme = "dark";
     }
+
     btn.addEventListener("click", () => {
       const isDark = document.body.classList.contains("bg-ink");
       if (isDark) {
