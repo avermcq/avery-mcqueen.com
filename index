@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Avery McQueen — Operations, Reporting & Automation</title>
+  <meta name="description" content="Luxury operations, reporting, and automation systems for high-touch teams. CRM cleanup, KPI dashboards, workflow automation, and client delivery systems." />
+  <meta name="theme-color" content="#0B0F1A" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ["Inter", "system-ui", "sans-serif"] },
+          colors: {
+            ink: "#0B0F1A",
+            pearl: "#F6F7FB",
+            mist: "#A7B0C2",
+            line: "rgba(255,255,255,.10)",
+            accent: "#7C5CFF",
+            accent2: "#2EE9A6"
+          },
+          boxShadow: {
+            glow: "0 0 0 1px rgba(255,255,255,.10), 0 18px 60px rgba(0,0,0,.55)"
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    :root { color-scheme: dark; }
+    .noise {
+      background-image:
+        radial-gradient(1200px 800px at 10% 5%, rgba(124,92,255,.25), transparent 60%),
+        radial-gradient(900px 700px at 85% 25%, rgba(46,233,166,.18), transparent 55%),
+        radial-gradient(700px 600px at 40% 95%, rgba(255,255,255,.06), transparent 55%),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='.12'/%3E%3C/svg%3E");
+      background-blend-mode: screen, screen, normal, overlay;
+    }
+    .glass { backdrop-filter: blur(10px); }
+  </style>
+</head>
+
+<body class="bg-ink text-white font-sans antialiased selection:bg-accent/30">
+  <!-- Top bar -->
+  <header class="sticky top-0 z-50 border-b border-white/10 bg-ink/70 glass">
+    <div class="mx-auto max-w-6xl px-5 py-3 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-white/5 border border-white/10 shadow-glow">
+          <span class="text-sm font-extrabold tracking-tight">AM</span>
+        </span>
+        <div class="leading-tight">
+          <div class="text-sm font-semibold tracking-tight">Avery McQueen</div>
+          <div class="text-xs text-mist">Operations • Reporting • Automation</div>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a class="text-white/80 hover:text-white transition" href="services.html">Services</a>
+        <a class="text-white/80 hover:text-white transition" href="portfolio.html">Work</a>
+        <a class="text-white/80 hover:text-white transition" href="about.html">About</a>
+        <a class="text-white/80 hover:text-white transition" href="inquire.html">Inquire</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <button id="themeBtn" class="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-3 py-2 text-sm text-white/90 hover:bg-white/10 transition" type="button">
+          <span id="themeIcon" aria-hidden="true">☾</span>
+          <span class="hidden sm:inline">Theme</span>
+        </button>
+        <a href="inquire.html" class="inline-flex items-center justify-center rounded-xl bg-white text-ink px-4 py-2 text-sm font-semibold hover:bg-white/90 transition">
+          Inquire
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="noise">
+    <div class="mx-auto max-w-6xl px-5 pt-16 pb-14">
+      <div class="grid gap-10 lg:grid-cols-12 items-center">
+        <div class="lg:col-span-7">
+          <p class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs text-white/80">
+            <span class="h-1.5 w-1.5 rounded-full bg-accent2"></span>
+            For high-touch teams who want clean, premium operations
+          </p>
+
+          <h1 class="mt-6 text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-[1.05]">
+            Luxury systems that make your business feel effortless.
+          </h1>
+
+          <p class="mt-5 text-base sm:text-lg text-white/75 max-w-2xl">
+            I design refined operational infrastructure—CRM hygiene, executive dashboards, and automation—so your team moves with clarity and your client experience stays elevated.
+          </p>
+
+          <div class="mt-8 flex flex-col sm:flex-row gap-3">
+            <a href="inquire.html" class="inline-flex items-center justify-center rounded-xl bg-accent px-5 py-3 font-semibold hover:opacity-95 transition shadow-glow">
+              Inquire
+            </a>
+            <a href="portfolio.html" class="inline-flex items-center justify-center rounded-xl border border-white/12 bg-white/5 px-5 py-3 font-semibold text-white/90 hover:bg-white/10 transition">
+              View Work
+            </a>
+          </div>
+
+          <div class="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-4">
+            <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+              <div class="text-sm font-semibold">CRM & HubSpot</div>
+              <div class="text-xs text-white/60 mt-1">Clean data • usable workflows</div>
+            </div>
+            <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+              <div class="text-sm font-semibold">KPI Dashboards</div>
+              <div class="text-xs text-white/60 mt-1">Executive clarity • consistency</div>
+            </div>
+            <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+              <div class="text-sm font-semibold">Automation</div>
+              <div class="text-xs text-white/60 mt-1">Sheets • Excel • scripts</div>
+            </div>
+            <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+              <div class="text-sm font-semibold">Client Delivery</div>
+              <div class="text-xs text-white/60 mt-1">Polished docs • shareable rooms</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5">
+          <div class="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-glow">
+            <div class="flex items-center justify-between">
+              <div>
+                <div class="text-sm text-white/70">Signature Outcome</div>
+                <div class="text-lg font-semibold mt-1">From manual chaos → quiet control</div>
+              </div>
+              <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/70">Inquire-only</span>
+            </div>
+
+            <div class="mt-6 space-y-3">
+              <div class="rounded-2xl border border-white/10 bg-ink/40 p-4">
+                <div class="text-sm font-semibold">Audit & Architecture</div>
+                <div class="text-xs text-white/65 mt-1">What’s broken, what’s manual, what’s missing—mapped cleanly.</div>
+              </div>
+              <div class="rounded-2xl border border-white/10 bg-ink/40 p-4">
+                <div class="text-sm font-semibold">Build & Automate</div>
+                <div class="text-xs text-white/65 mt-1">Dashboards, scripts, workflows, and documentation your team can run.</div>
+              </div>
+              <div class="rounded-2xl border border-white/10 bg-ink/40 p-4">
+                <div class="text-sm font-semibold">Launch & Support</div>
+                <div class="text-xs text-white/65 mt-1">Polished handoff + optional ongoing refinement.</div>
+              </div>
+            </div>
+
+            <div class="mt-6">
+              <a href="services.html" class="inline-flex w-full items-center justify-center rounded-xl bg-white text-ink px-5 py-3 font-semibold hover:bg-white/90 transition">
+                Explore Services
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Social proof -->
+      <div class="mt-14 grid gap-4 md:grid-cols-3">
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+          <div class="text-xs text-white/60">Built for</div>
+          <div class="mt-2 text-lg font-semibold">Real estate development teams</div>
+          <div class="mt-2 text-sm text-white/70">Pricing + inventory reporting, curated client delivery, weekly KPI clarity.</div>
+        </div>
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+          <div class="text-xs text-white/60">Built for</div>
+          <div class="mt-2 text-lg font-semibold">Membership organizations</div>
+          <div class="mt-2 text-sm text-white/70">HubSpot ops, directory accuracy, renewals + event workflows.</div>
+        </div>
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+          <div class="text-xs text-white/60">Built for</div>
+          <div class="mt-2 text-lg font-semibold">High-touch operators</div>
+          <div class="mt-2 text-sm text-white/70">Systems that look premium and behave reliably.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured work -->
+  <section class="bg-ink">
+    <div class="mx-auto max-w-6xl px-5 py-16">
+      <div class="flex items-end justify-between gap-6">
+        <div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight">Selected Work</h2>
+          <p class="mt-2 text-white/70 max-w-2xl">A few examples of the kind of infrastructure I build—clean, scalable, and designed for real teams.</p>
+        </div>
+        <a href="portfolio.html" class="hidden sm:inline-flex text-sm font-semibold text-white/85 hover:text-white transition">
+          View all →
+        </a>
+      </div>
+
+      <div class="mt-8 grid gap-6 md:grid-cols-3">
+        <a href="portfolio.html#kpi" class="group rounded-3xl border border-white/10 bg-white/5 p-6 hover:bg-white/7 transition shadow-glow">
+          <div class="text-xs text-white/60">Dashboards</div>
+          <div class="mt-2 text-lg font-semibold group-hover:text-white">Executive KPI Dashboard Framework</div>
+          <p class="mt-2 text-sm text-white/70">Pipeline, leads, appointments, and performance—consistent definitions and leadership visibility.</p>
+          <div class="mt-6 text-sm font-semibold text-white/85">Explore →</div>
+        </a>
+
+        <a href="portfolio.html#automation" class="group rounded-3xl border border-white/10 bg-white/5 p-6 hover:bg-white/7 transition shadow-glow">
+          <div class="text-xs text-white/60">Automation</div>
+          <div class="mt-2 text-lg font-semibold group-hover:text-white">Daily Snapshot + Change Tracking</div>
+          <p class="mt-2 text-sm text-white/70">Scheduled reporting that creates a clean “what changed” view—no manual comparisons.</p>
+          <div class="mt-6 text-sm font-semibold text-white/85">Explore →</div>
+        </a>
+
+        <a href="portfolio.html#crm" class="group rounded-3xl border border-white/10 bg-white/5 p-6 hover:bg-white/7 transition shadow-glow">
+          <div class="text-xs text-white/60">CRM & Data</div>
+          <div class="mt-2 text-lg font-semibold group-hover:text-white">HubSpot Export Standardization</div>
+          <p class="mt-2 text-sm text-white/70">Field consistency, formatting fixes, import readiness, and a reliable foundation for reporting.</p>
+          <div class="mt-6 text-sm font-semibold text-white/85">Explore →</div>
+        </a>
+      </div>
+
+      <div class="mt-10 sm:hidden">
+        <a href="portfolio.html" class="inline-flex text-sm font-semibold text-white/85 hover:text-white transition">View all →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-ink">
+    <div class="mx-auto max-w-6xl px-5 pb-16">
+      <div class="rounded-3xl border border-white/10 bg-gradient-to-r from-white/6 to-white/3 p-10 shadow-glow">
+        <div class="grid gap-8 lg:grid-cols-12 items-center">
+          <div class="lg:col-span-8">
+            <h3 class="text-2xl sm:text-3xl font-extrabold tracking-tight">If your ops feel manual, inconsistent, or fragile—let’s refine them.</h3>
+            <p class="mt-2 text-white/75">Inquire to request a scope. I’ll recommend the cleanest path forward based on your goals and systems.</p>
+          </div>
+          <div class="lg:col-span-4 flex gap-3 lg:justify-end">
+            <a href="inquire.html" class="inline-flex w-full lg:w-auto items-center justify-center rounded-xl bg-white text-ink px-6 py-3 font-semibold hover:bg-white/90 transition">
+              Inquire
+            </a>
+            <a href="services.html" class="inline-flex w-full lg:w-auto items-center justify-center rounded-xl border border-white/12 bg-white/5 px-6 py-3 font-semibold text-white/90 hover:bg-white/10 transition">
+              Services
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/10 bg-ink">
+    <div class="mx-auto max-w-6xl px-5 py-10">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
+        <div>
+          <div class="text-sm font-semibold">Avery McQueen</div>
+          <div class="text-xs text-white/60 mt-1">Operations • Reporting • Automation</div>
+        </div>
+        <div class="flex flex-wrap gap-4 text-sm text-white/70">
+          <a href="services.html" class="hover:text-white transition">Services</a>
+          <a href="portfolio.html" class="hover:text-white transition">Work</a>
+          <a href="about.html" class="hover:text-white transition">About</a>
+          <a href="inquire.html" class="hover:text-white transition">Inquire</a>
+        </div>
+      </div>
+      <div class="mt-8 text-xs text-white/50">© <span id="year"></span> Avery McQueen. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    // Year
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Theme toggle (dark/light)
+    const root = document.documentElement;
+    const btn = document.getElementById("themeBtn");
+    const icon = document.getElementById("themeIcon");
+    const saved = localStorage.getItem("am_theme");
+    if (saved === "light") {
+      document.body.classList.add("bg-pearl","text-ink");
+      document.body.classList.remove("bg-ink","text-white");
+      icon.textContent = "☀";
+      document.documentElement.style.colorScheme = "light";
+    } else {
+      icon.textContent = "☾";
+      document.documentElement.style.colorScheme = "dark";
+    }
+    btn.addEventListener("click", () => {
+      const isDark = document.body.classList.contains("bg-ink");
+      if (isDark) {
+        document.body.classList.add("bg-pearl","text-ink");
+        document.body.classList.remove("bg-ink","text-white");
+        localStorage.setItem("am_theme","light");
+        icon.textContent = "☀";
+        document.documentElement.style.colorScheme = "light";
+      } else {
+        document.body.classList.add("bg-ink","text-white");
+        document.body.classList.remove("bg-pearl","text-ink");
+        localStorage.setItem("am_theme","dark");
+        icon.textContent = "☾";
+        document.documentElement.style.colorScheme = "dark";
+      }
+    });
+  </script>
+</body>
+</html>
