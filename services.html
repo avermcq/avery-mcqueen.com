@@ -4,171 +4,369 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Services — Avery McQueen</title>
-  <meta name="description" content="CRM cleanup, KPI dashboards, workflow automation, and client delivery systems. Inquire-only." />
+  <meta name="description" content="Business operations, program management, dashboards, reporting, and automation for high-touch teams. Inquire only." />
+  <meta name="theme-color" content="#0B0F1A" />
+
+  <!-- Social share (update YOURDOMAIN + og image when live) -->
+  <meta property="og:title" content="Services — Avery McQueen" />
+  <meta property="og:description" content="Business operations, program management, dashboards, reporting, and automation for high-touch teams. Inquire only." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://YOURDOMAIN.COM/services.html" />
+  <meta property="og:image" content="https://YOURDOMAIN.COM/og.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Services — Avery McQueen" />
+  <meta name="twitter:description" content="Business operations, program management, dashboards, reporting, and automation for high-touch teams. Inquire only." />
+  <meta name="twitter:image" content="https://YOURDOMAIN.COM/og.jpg" />
+
+  <link rel="canonical" href="https://YOURDOMAIN.COM/services.html" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
+
   <script>
     tailwind.config = {
       theme: {
         extend: {
-          fontFamily: { sans: ["Inter","system-ui","sans-serif"] },
-          colors: { ink:"#0B0F1A", mist:"#A7B0C2", accent:"#7C5CFF", accent2:"#2EE9A6" },
-          boxShadow: { glow:"0 0 0 1px rgba(255,255,255,.10), 0 18px 60px rgba(0,0,0,.55)" }
+          fontFamily: { sans: ["Inter", "system-ui", "sans-serif"] },
+          colors: {
+            ink: "#0B0F1A",
+            pearl: "#F6F7FB",
+            mist: "#A7B0C2",
+            line: "rgba(255,255,255,.10)",
+            accent: "#7C5CFF",
+            accent2: "#2EE9A6"
+          },
+          boxShadow: {
+            glow: "0 0 0 1px rgba(255,255,255,.10), 0 18px 60px rgba(0,0,0,.55)"
+          }
         }
       }
     }
   </script>
+
   <style>
     :root { color-scheme: dark; }
-    .glass{ backdrop-filter: blur(10px); }
+    .noise {
+      background-image:
+        radial-gradient(1200px 800px at 10% 5%, rgba(124,92,255,.22), transparent 60%),
+        radial-gradient(900px 700px at 85% 25%, rgba(46,233,166,.16), transparent 55%),
+        radial-gradient(700px 600px at 40% 95%, rgba(255,255,255,.06), transparent 55%),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='.12'/%3E%3C/svg%3E");
+      background-blend-mode: screen, screen, normal, overlay;
+    }
+    .glass { backdrop-filter: blur(10px); }
   </style>
 </head>
 
-<body class="bg-ink text-white font-sans antialiased">
-<header class="sticky top-0 z-50 border-b border-white/10 bg-ink/70 glass">
-  <div class="mx-auto max-w-6xl px-5 py-3 flex items-center justify-between">
-    <a href="index.html" class="flex items-center gap-3">
-      <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-white/5 border border-white/10 shadow-glow">
-        <span class="text-sm font-extrabold tracking-tight">AM</span>
-      </span>
-      <div class="leading-tight">
-        <div class="text-sm font-semibold tracking-tight">Avery McQueen</div>
-        <div class="text-xs text-mist">Services</div>
-      </div>
-    </a>
-    <nav class="hidden md:flex items-center gap-6 text-sm">
-      <a class="text-white/80 hover:text-white transition" href="services.html">Services</a>
-      <a class="text-white/80 hover:text-white transition" href="portfolio.html">Work</a>
-      <a class="text-white/80 hover:text-white transition" href="about.html">About</a>
-      <a class="text-white/80 hover:text-white transition" href="inquire.html">Inquire</a>
-    </nav>
-    <a href="inquire.html" class="inline-flex items-center justify-center rounded-xl bg-white text-ink px-4 py-2 text-sm font-semibold hover:bg-white/90 transition">Inquire</a>
-  </div>
-</header>
-
-<main class="mx-auto max-w-6xl px-5 py-14">
-  <div class="max-w-3xl">
-    <p class="text-xs tracking-widest uppercase text-white/60">Inquire-only • Luxury operations</p>
-    <h1 class="mt-3 text-4xl sm:text-5xl font-black tracking-tight">Services</h1>
-    <p class="mt-4 text-white/75">
-      I build refined operational systems for high-touch teams—clean CRM structure, executive reporting, and automation that reduces manual work without compromising a premium client experience.
-    </p>
-  </div>
-
-  <section class="mt-12 grid gap-6 md:grid-cols-2">
-    <div class="rounded-3xl border border-white/10 bg-white/5 p-7 shadow-glow">
-      <div class="flex items-start justify-between gap-4">
-        <div>
-          <div class="text-xs text-white/60">CRM & Data</div>
-          <h2 class="mt-2 text-xl font-semibold">CRM Cleanup + HubSpot Operations</h2>
-          <p class="mt-3 text-sm text-white/75">
-            Export cleanup, field standardization, import readiness, and workflow alignment—so your CRM becomes reliable, usable, and reporting-ready.
-          </p>
+<body class="bg-ink text-white font-sans antialiased selection:bg-accent/30">
+  <!-- Top bar -->
+  <header class="sticky top-0 z-50 border-b border-white/10 bg-ink/70 glass">
+    <div class="mx-auto max-w-6xl px-5 py-3 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-white/5 border border-white/10 shadow-glow">
+          <span class="text-sm font-extrabold tracking-tight">AM</span>
+        </span>
+        <div class="leading-tight">
+          <div class="text-sm font-semibold tracking-tight">Avery McQueen</div>
+          <div class="text-xs text-mist">Services</div>
         </div>
-        <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/70">Inquire</span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a class="text-white/80 hover:text-white transition" href="services.html">Services</a>
+        <a class="text-white/80 hover:text-white transition" href="portfolio.html">Work</a>
+        <a class="text-white/80 hover:text-white transition" href="about.html">About</a>
+        <a class="text-white/80 hover:text-white transition" href="inquire.html">Inquire</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <button
+          id="themeBtn"
+          aria-label="Toggle theme"
+          class="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-3 py-2 text-sm text-white/90 hover:bg-white/10 transition"
+          type="button"
+        >
+          <span id="themeIcon" aria-hidden="true">☾</span>
+          <span class="hidden sm:inline">Theme</span>
+        </button>
+        <a href="inquire.html" class="inline-flex items-center justify-center rounded-xl bg-white text-ink px-4 py-2 text-sm font-semibold hover:bg-white/90 transition">
+          Inquire
+        </a>
       </div>
-
-      <ul class="mt-5 space-y-2 text-sm text-white/70">
-        <li>• Standardize names, phones, URLs, locations, and formatting</li>
-        <li>• Resolve structural inconsistencies before import</li>
-        <li>• Practical workflow recommendations (teams can actually follow)</li>
-        <li>• Clear documentation + repeatable standards</li>
-      </ul>
     </div>
+  </header>
 
-    <div class="rounded-3xl border border-white/10 bg-white/5 p-7 shadow-glow">
-      <div class="flex items-start justify-between gap-4">
-        <div>
-          <div class="text-xs text-white/60">Dashboards</div>
-          <h2 class="mt-2 text-xl font-semibold">KPI Dashboards + Executive Reporting</h2>
-          <p class="mt-3 text-sm text-white/75">
-            Executive-ready KPI dashboards for pipeline, leads, appointments, and performance—built for clarity, consistency, and confident decision-making.
-          </p>
-        </div>
-        <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/70">Inquire</span>
-      </div>
-
-      <ul class="mt-5 space-y-2 text-sm text-white/70">
-        <li>• KPI framework + metric definitions</li>
-        <li>• Automated rollups from live sheets/exports</li>
-        <li>• Clean layouts for leadership + team views</li>
-        <li>• Reporting that stays consistent over time</li>
-      </ul>
-    </div>
-
-    <div class="rounded-3xl border border-white/10 bg-white/5 p-7 shadow-glow">
-      <div class="flex items-start justify-between gap-4">
-        <div>
-          <div class="text-xs text-white/60">Automation</div>
-          <h2 class="mt-2 text-xl font-semibold">Workflow Automation (Sheets + Excel)</h2>
-          <p class="mt-3 text-sm text-white/75">
-            Google Sheets (Apps Script) and Excel (Office Scripts) automations that eliminate repetitive tasks, standardize workflows, and protect your team’s time.
-          </p>
-        </div>
-        <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/70">Inquire</span>
-      </div>
-
-      <ul class="mt-5 space-y-2 text-sm text-white/70">
-        <li>• Daily snapshots + “what changed” reporting</li>
-        <li>• Automated formatting, flags, and rollups</li>
-        <li>• Team-friendly tools (menus, buttons, templates)</li>
-        <li>• Documentation + durable logic</li>
-      </ul>
-    </div>
-
-    <div class="rounded-3xl border border-white/10 bg-white/5 p-7 shadow-glow">
-      <div class="flex items-start justify-between gap-4">
-        <div>
-          <div class="text-xs text-white/60">Client Delivery</div>
-          <h2 class="mt-2 text-xl font-semibold">Client Room Systems + Document Delivery</h2>
-          <p class="mt-3 text-sm text-white/75">
-            A polished, shareable delivery experience for curated options, floor plans, and key documents—designed for premium workflows.
-          </p>
-        </div>
-        <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/70">Inquire</span>
-      </div>
-
-      <ul class="mt-5 space-y-2 text-sm text-white/70">
-        <li>• Curated option sets + clear summaries</li>
-        <li>• Shareable folders and structured documentation</li>
-        <li>• Repeatable templates for team use</li>
-        <li>• Clean client-facing presentation</li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="mt-12 rounded-3xl border border-white/10 bg-gradient-to-r from-white/6 to-white/3 p-10 shadow-glow">
-    <div class="grid gap-6 lg:grid-cols-12 items-center">
-      <div class="lg:col-span-8">
-        <h3 class="text-2xl font-extrabold tracking-tight">Need a tailored engagement?</h3>
-        <p class="mt-2 text-white/75">
-          I offer custom scopes for teams who want refined systems, clean reporting, and automation that scales. Share your goals and I’ll recommend the right approach.
+  <!-- Hero -->
+  <section class="noise">
+    <div class="mx-auto max-w-6xl px-5 pt-16 pb-12">
+      <div class="max-w-3xl">
+        <p class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs text-white/80">
+          <span class="h-1.5 w-1.5 rounded-full bg-accent2"></span>
+          Inquire-only • Premium operations for high-touch teams
         </p>
-      </div>
-      <div class="lg:col-span-4 flex gap-3 lg:justify-end">
-        <a href="inquire.html" class="inline-flex w-full lg:w-auto items-center justify-center rounded-xl bg-white text-ink px-6 py-3 font-semibold hover:bg-white/90 transition">Inquire</a>
-        <a href="portfolio.html" class="inline-flex w-full lg:w-auto items-center justify-center rounded-xl border border-white/12 bg-white/5 px-6 py-3 font-semibold text-white/90 hover:bg-white/10 transition">View Work</a>
+
+        <h1 class="mt-6 text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-[1.05]">
+          Services
+        </h1>
+
+        <p class="mt-5 text-base sm:text-lg text-white/75 max-w-2xl">
+          I help teams reduce manual work, tighten execution, and protect the brand experience—through refined workflows, executive reporting, and automation that lasts.
+        </p>
+
+        <div class="mt-8 flex flex-col sm:flex-row gap-3">
+          <a href="#offerings" class="inline-flex items-center justify-center rounded-xl border border-white/12 bg-white/5 px-5 py-3 font-semibold text-white/90 hover:bg-white/10 transition">
+            View Offerings
+          </a>
+          <a href="inquire.html" class="inline-flex items-center justify-center rounded-xl bg-accent px-5 py-3 font-semibold hover:opacity-95 transition shadow-glow">
+            Inquire
+          </a>
+        </div>
       </div>
     </div>
   </section>
-</main>
 
-<footer class="border-t border-white/10 bg-ink">
-  <div class="mx-auto max-w-6xl px-5 py-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
-    <div>
-      <div class="text-sm font-semibold">Avery McQueen</div>
-      <div class="text-xs text-white/60 mt-1">Operations • Reporting • Automation</div>
+  <main class="bg-ink">
+    <div class="mx-auto max-w-6xl px-5 py-16">
+
+      <!-- Offerings -->
+      <section id="offerings" class="scroll-mt-28">
+        <div class="flex items-end justify-between gap-6">
+          <div>
+            <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight">Core Offerings</h2>
+            <p class="mt-2 text-white/70 max-w-2xl">
+              Built for developers, sales and marketing teams, and membership/event organizations that need structure, visibility, and execution that feels premium.
+            </p>
+          </div>
+          <span class="hidden sm:inline-flex rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs text-white/70">
+            No public pricing • scoped by complexity
+          </span>
+        </div>
+
+        <div class="mt-8 grid gap-6 md:grid-cols-2">
+          <!-- Ops + Program -->
+          <article class="rounded-3xl border border-white/10 bg-white/5 p-7 shadow-glow">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <div class="text-xs text-white/60">Operations</div>
+                <h3 class="mt-2 text-xl font-semibold">Business Operations + Program Management</h3>
+              </div>
+              <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/70">Strategy → Execution</span>
+            </div>
+            <p class="mt-4 text-sm text-white/75">
+              When work is scattered and ownership is unclear, I build a program structure that teams can run—without constant “status chasing.”
+            </p>
+            <ul class="mt-5 space-y-2 text-sm text-white/70">
+              <li>• Cross-functional planning and milestone tracking</li>
+              <li>• Operating rhythms (weekly reporting, handoffs, stakeholder alignment)</li>
+              <li>• Process improvement and documentation that sticks</li>
+              <li>• Resource planning support and timeline clarity</li>
+            </ul>
+          </article>
+
+          <!-- Dashboards -->
+          <article class="rounded-3xl border border-white/10 bg-white/5 p-7 shadow-glow">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <div class="text-xs text-white/60">Reporting</div>
+                <h3 class="mt-2 text-xl font-semibold">Executive Dashboards + KPI Reporting</h3>
+              </div>
+              <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/70">Leadership-ready</span>
+            </div>
+            <p class="mt-4 text-sm text-white/75">
+              Dashboards leadership can trust—built with consistent definitions, clean hierarchy, and outputs that reduce ambiguity.
+            </p>
+            <ul class="mt-5 space-y-2 text-sm text-white/70">
+              <li>• KPI frameworks + metric definitions (prevents reporting drift)</li>
+              <li>• Pipeline reporting and stage visibility</li>
+              <li>• Forecasting support and performance rollups</li>
+              <li>• Views for leadership + views for operators</li>
+            </ul>
+          </article>
+
+          <!-- Automation -->
+          <article class="rounded-3xl border border-white/10 bg-white/5 p-7 shadow-glow">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <div class="text-xs text-white/60">Automation</div>
+                <h3 class="mt-2 text-xl font-semibold">Workflow Automation (Sheets, Excel, CRM)</h3>
+              </div>
+              <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/70">Less manual</span>
+            </div>
+            <p class="mt-4 text-sm text-white/75">
+              Automation that feels invisible—reducing repetitive work while keeping teams in control.
+            </p>
+            <ul class="mt-5 space-y-2 text-sm text-white/70">
+              <li>• Scheduled snapshots + “what changed” reporting</li>
+              <li>• Automated rollups, flags, and formatting</li>
+              <li>• Templates + tooling your team can maintain</li>
+              <li>• Documentation and handoff built in</li>
+            </ul>
+          </article>
+
+          <!-- CRM + Data -->
+          <article class="rounded-3xl border border-white/10 bg-white/5 p-7 shadow-glow">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <div class="text-xs text-white/60">CRM & Data</div>
+                <h3 class="mt-2 text-xl font-semibold">CRM Hygiene + Data Standardization</h3>
+              </div>
+              <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/70">HubSpot-ready</span>
+            </div>
+            <p class="mt-4 text-sm text-white/75">
+              Clean foundations so workflows and reporting don’t break—especially in HubSpot and high-touch sales environments.
+            </p>
+            <ul class="mt-5 space-y-2 text-sm text-white/70">
+              <li>• Export cleanup (phones, URLs, locations, naming conventions)</li>
+              <li>• Field consistency across objects and teams</li>
+              <li>• Import readiness and error reduction</li>
+              <li>• Operational recommendations aligned to real usage</li>
+            </ul>
+          </article>
+
+          <!-- Client Delivery -->
+          <article class="md:col-span-2 rounded-3xl border border-white/10 bg-white/5 p-7 shadow-glow">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <div class="text-xs text-white/60">Premium Output</div>
+                <h3 class="mt-2 text-xl font-semibold">Client Delivery Systems (Real Estate + Member Experiences)</h3>
+              </div>
+              <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/70">Brand-protective</span>
+            </div>
+            <p class="mt-4 text-sm text-white/75 max-w-3xl">
+              Polished, client-ready deliverables and internal visibility—so the front-end feels premium and the back-end runs efficiently.
+            </p>
+            <div class="mt-5 grid gap-4 sm:grid-cols-2">
+              <div class="rounded-2xl border border-white/10 bg-ink/40 p-5">
+                <div class="text-sm font-semibold">Luxury Real Estate</div>
+                <p class="mt-2 text-sm text-white/70">
+                  Curated inventory options, pricing summaries, and shareable documentation workflows designed for decision-making.
+                </p>
+              </div>
+              <div class="rounded-2xl border border-white/10 bg-ink/40 p-5">
+                <div class="text-sm font-semibold">Membership + Events</div>
+                <p class="mt-2 text-sm text-white/70">
+                  Directory readiness, renewal operations support, event workflows, and clean reporting across teams.
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Engagement -->
+      <section class="mt-14">
+        <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight">How Engagements Work</h2>
+        <p class="mt-2 text-white/70 max-w-2xl">
+          A clean process designed for speed, clarity, and high-quality outcomes.
+        </p>
+
+        <div class="mt-8 grid gap-6 md:grid-cols-3">
+          <div class="rounded-3xl border border-white/10 bg-white/5 p-7 shadow-glow">
+            <div class="text-xs text-white/60">01</div>
+            <div class="mt-2 text-lg font-semibold">Audit + Scope</div>
+            <p class="mt-2 text-sm text-white/70">
+              We map goals, pain points, and current tools. You’ll get a clear plan and scope recommendation.
+            </p>
+          </div>
+          <div class="rounded-3xl border border-white/10 bg-white/5 p-7 shadow-glow">
+            <div class="text-xs text-white/60">02</div>
+            <div class="mt-2 text-lg font-semibold">Build + Implement</div>
+            <p class="mt-2 text-sm text-white/70">
+              Dashboards, workflows, automation, and documentation—built with durable logic and premium presentation.
+            </p>
+          </div>
+          <div class="rounded-3xl border border-white/10 bg-white/5 p-7 shadow-glow">
+            <div class="text-xs text-white/60">03</div>
+            <div class="mt-2 text-lg font-semibold">Launch + Support</div>
+            <p class="mt-2 text-sm text-white/70">
+              Clean handoff and optional refinement so your team can maintain momentum without reliance.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="mt-16">
+        <div class="rounded-3xl border border-white/10 bg-gradient-to-r from-white/6 to-white/3 p-10 shadow-glow">
+          <div class="grid gap-8 lg:grid-cols-12 items-center">
+            <div class="lg:col-span-8">
+              <h3 class="text-2xl sm:text-3xl font-extrabold tracking-tight">Ready to refine operations without losing polish?</h3>
+              <p class="mt-2 text-white/75">
+                Inquire with your goals and current tools. I’ll recommend the cleanest path forward.
+              </p>
+            </div>
+            <div class="lg:col-span-4 flex gap-3 lg:justify-end">
+              <a href="inquire.html" class="inline-flex w-full lg:w-auto items-center justify-center rounded-xl bg-white text-ink px-6 py-3 font-semibold hover:bg-white/90 transition">
+                Inquire
+              </a>
+              <a href="portfolio.html" class="inline-flex w-full lg:w-auto items-center justify-center rounded-xl border border-white/12 bg-white/5 px-6 py-3 font-semibold text-white/90 hover:bg-white/10 transition">
+                View Work
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </div>
-    <div class="flex flex-wrap gap-4 text-sm text-white/70">
-      <a href="index.html" class="hover:text-white transition">Home</a>
-      <a href="portfolio.html" class="hover:text-white transition">Work</a>
-      <a href="about.html" class="hover:text-white transition">About</a>
-      <a href="inquire.html" class="hover:text-white transition">Inquire</a>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/10 bg-ink">
+    <div class="mx-auto max-w-6xl px-5 py-10">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
+        <div>
+          <div class="text-sm font-semibold">Avery McQueen</div>
+          <div class="text-xs text-white/60 mt-1">Operations • Reporting • Automation</div>
+        </div>
+        <div class="flex flex-wrap gap-4 text-sm text-white/70">
+          <a href="services.html" class="hover:text-white transition">Services</a>
+          <a href="portfolio.html" class="hover:text-white transition">Work</a>
+          <a href="about.html" class="hover:text-white transition">About</a>
+          <a href="inquire.html" class="hover:text-white transition">Inquire</a>
+        </div>
+      </div>
+      <div class="mt-8 text-xs text-white/50">© <span id="year"></span> Avery McQueen. All rights reserved.</div>
     </div>
-  </div>
-</footer>
+  </footer>
+
+  <script>
+    // Year
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Theme toggle (dark/light)
+    const btn = document.getElementById("themeBtn");
+    const icon = document.getElementById("themeIcon");
+    const saved = localStorage.getItem("am_theme");
+
+    if (saved === "light") {
+      document.body.classList.add("bg-pearl","text-ink");
+      document.body.classList.remove("bg-ink","text-white");
+      icon.textContent = "☀";
+      document.documentElement.style.colorScheme = "light";
+    } else {
+      icon.textContent = "☾";
+      document.documentElement.style.colorScheme = "dark";
+    }
+
+    btn.addEventListener("click", () => {
+      const isDark = document.body.classList.contains("bg-ink");
+      if (isDark) {
+        document.body.classList.add("bg-pearl","text-ink");
+        document.body.classList.remove("bg-ink","text-white");
+        localStorage.setItem("am_theme","light");
+        icon.textContent = "☀";
+        document.documentElement.style.colorScheme = "light";
+      } else {
+        document.body.classList.add("bg-ink","text-white");
+        document.body.classList.remove("bg-pearl","text-ink");
+        localStorage.setItem("am_theme","dark");
+        icon.textContent = "☾";
+        document.documentElement.style.colorScheme = "dark";
+      }
+    });
+  </script>
 </body>
 </html>
-
